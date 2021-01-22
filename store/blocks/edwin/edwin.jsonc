@@ -1,110 +1,91 @@
 {
-    "store.custom#edwin": {
-        "blocks": [
-            "flex-layout.row#1",
-            "flex-layout.row#2",
-            "flex-layout.row#3"
-        ]
-    },
+  "store.custom#edwin": {
+    "blocks": ["flex-layout.row#1", "flex-layout.row#2", "flex-layout.row#3"]
+  },
 
-    "flex-layout.row#1": {
-        "children": [
-            "flex-layout.col#left1",
-            "flex-layout.col#center1",
-            "flex-layout.col#right1"
-        ]
-    },
+  "flex-layout.row#1": {
+    "children": [
+      "flex-layout.col#left1",
+      "flex-layout.col#center1",
+      "flex-layout.col#right1"
+    ]
+  },
 
-    "flex-layout.col#left1": {
-        "children": [
-            "rich-text#left1"
-        ]
-    },
+  "flex-layout.col#left1": {
+    "children": ["rich-text#left1"]
+  },
 
-    "rich-text#left1": {
-        "props": {
-          "textAlignment": "CENTER",
-          "text": "# Edwin \n 1. item 1\n 2. item 2\n 3. item 3\n 4. item 4\n 5. item 5 \n\n [terminos y condiciones]",
-          "blockClass": "miclaseRichtext"
-        }
-    },
-
-    "flex-layout.col#center1": {
-        "children": [
-            "info-card#enlace"
-        ]
-    },
-
-    "info-card#enlace": {
-        "props": {
-            "isFullModeStyle": true,
-            "textPosition": "CENTER",
-            "headline": "Clearance Sale",
-            "subhead": "SUBHEAD",
-            "callToActionText": "favoritos",
-            "callToActionUrl": "/favoritos",
-            "imageUrl": "https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen.jpg"
-
-          }
-    },
-
-    "image#gato": {
-        "props": {
-          "src": "https://s3-us-west-2.amazonaws.com/lasaga-blog/media/images/grupo_imagen.original.jpg",
-          "link": "/gato"
-        }
-      },
-
-    "flex-layout.col#right1": {
-        "children": [
-            "image#gato"
-        ]
-    },
-
-    "flex-layout.row#2": {
-        "children": [
-             "flex-layout.col#left2"//,
-            // "flex-layout.col#center2",
-            // "flex-layout.col#right2"
-        ]
-    },
-
-    "iframe#video": {
-        "props": {
-          "src": "https://www.youtube.com/embed/fXhuswqe7To",
-          "width": "100%",
-          "height": "500px"
-        }
-      },
-
-    "flex-layout.col#left2": {
-        "props":{
-            "width": "100%"
-        },
-        "children": [
-            "iframe#video"
-        ]
-    },
-
-    "flex-layout.row#3": {
-        "children": [
-            "flex-layout.col#vitrina"
-        ]
-    },
-
-    "flex-layout.col#vitrina": {
-        "props": {
-            "width": "100%"
-        },
-        "children":[
-            "list-context.product-list#demo2"
-        ]
-    },
-    
-    "list-context.product-list#demo2": {
-        "blocks": ["product-summary.shelf"],
-        "children": ["slider-layout#demo-products"]
+  "rich-text#left1": {
+    "props": {
+      "textAlignment": "CENTER",
+      "text": "# Edwin \n 1. item 1\n 2. item 2\n 3. item 3\n 4. item 4\n 5. item 5 \n\n [terminos y condiciones]",
+      "blockClass": "miclaseRichtext"
     }
+  },
 
+  "flex-layout.col#center1": {
+    "children": ["info-card#enlace"]
+  },
 
+  "info-card#enlace": {
+    "props": {
+      "isFullModeStyle": true,
+      "textPosition": "CENTER",
+      "headline": "Clearance Sale",
+      "subhead": "SUBHEAD",
+      "callToActionText": "favoritos",
+      "callToActionUrl": "/favoritos",
+      "imageUrl": "https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen.jpg"
+    }
+  },
+
+  "image#gato": {
+    "props": {
+      "src": "https://s3-us-west-2.amazonaws.com/lasaga-blog/media/images/grupo_imagen.original.jpg",
+      "link": "/gato"
+    }
+  },
+
+  "flex-layout.col#right1": {
+    "children": ["image#gato"]
+  },
+
+  "flex-layout.row#2": {
+    "children": [
+      "flex-layout.col#left2" //,
+      // "flex-layout.col#center2",
+      // "flex-layout.col#right2"
+    ]
+  },
+
+  "iframe#video": {
+    "props": {
+      "src": "https://www.youtube.com/embed/fXhuswqe7To",
+      "width": "100%",
+      "height": "500px"
+    }
+  },
+
+  "flex-layout.col#left2": {
+    "props": {
+      "width": "100%"
+    },
+    "children": ["iframe#video"]
+  },
+
+  "flex-layout.row#3": {
+    "children": ["flex-layout.col#vitrina"]
+  },
+
+  "flex-layout.col#vitrina": {
+    "props": {
+      "width": "100%"
+    },
+    "children": ["list-context.product-list#demo2"]
+  },
+
+  "list-context.product-list#demo2": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"]
+  }
 }
