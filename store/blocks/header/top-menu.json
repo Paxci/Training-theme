@@ -2,9 +2,26 @@
   "vtex.menu@2.x:menu#websites": {
     "children": [
       "menu-item#shop",
-      "menu-item#about-us"
+      "menu-item#about-us",
+      "menu-item#edwin"
     ]
   },
+  "menu-item#edwin": {
+    "props": {
+      "id": "menu-item-edwin",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/edwin",
+        "noFollow": false,
+        "tagTitle": "edwin",
+        "text": "edwin"
+      }
+    }
+  },
+
   "menu-item#shop": {
     "props": {
       "id": "menu-item-shop",
