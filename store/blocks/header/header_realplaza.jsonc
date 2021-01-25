@@ -110,7 +110,8 @@
 
 	"flex-layout.row#4-desktop": {
 		"props": {
-      "verticalAlign": "middle"
+			"verticalAlign": "middle",			
+			"horizontalAlign": "center"
     },
 		"children":[
 			"flex-layout.col#categorias",
