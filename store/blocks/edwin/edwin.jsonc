@@ -41,7 +41,7 @@
 
   "image#gato": {
     "props": {
-      "src": "./desarrolloweb.png",
+      "src": "https://raw.githubusercontent.com/Paxci/Training-theme/master/store/blocks/edwin/desarrolloweb.png?token=AQNF6QHKFE7TJ2NUJO4JT5DAC5VLW",
       "link": "/gato"
     }
   },
