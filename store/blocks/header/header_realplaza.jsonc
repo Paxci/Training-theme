@@ -40,7 +40,7 @@
 	"image#top-promociones": {
     "props": {
       "src": "https://raw.githubusercontent.com/Paxci/Training-theme/master/store/blocks/header/imgs/header-promotions.jpg?token=AQNF6QF34S4L6WP7VIVEM63ADBQLC",
-      "link": "/gato"
+      "link": "/"
     }
   },
 
@@ -84,11 +84,18 @@
 	"flex-layout.col#micuenta": {
 		"props": {
 			"verticalAlign": "middle",
+			"horizontalAlign": "right",
 			"width": "15%"
     },
 		"children": [
-
+			"rich-text#micuenta"
 		]
+	},
+
+	"rich-text#micuenta": {
+		"props":{
+			"text": "Mi cuenta"
+		}
 	},
 
 	"flex-layout.col#cart": {
