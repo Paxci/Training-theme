@@ -25,9 +25,191 @@
       "blockClass": "sticky-header"
     },
 		"children": [
-			"flex-layout.row#4-desktop",
 			"flex-layout.row#2-desktop",
-			"flex-layout.row#3-desktop"
+			"flex-layout.row#3-desktop",
+			"flex-layout.row#4-desktop"
 		]
-  }
+	},
+	
+	"flex-layout.row#2-desktop": {
+		"children":[
+			"image#top-promociones"
+		]
+	},
+
+	"image#top-promociones": {
+    "props": {
+      "src": "https://raw.githubusercontent.com/Paxci/Training-theme/master/store/blocks/header/imgs/header-promotions.jpg?token=AQNF6QF34S4L6WP7VIVEM63ADBQLC",
+      "link": "/gato"
+    }
+  },
+
+	"flex-layout.row#3-desktop": {
+		"children":[
+			"flex-layout.col#logo-desktop",
+			"flex-layout.col#buscador-input",
+			"flex-layout.col#micuenta",
+			"flex-layout.col#cart"
+		]
+	},
+
+	"flex-layout.col#logo-desktop": {
+		"props": {
+			"verticalAlign": "middle",
+			"width": "20%"
+    },
+		"children": [
+			"logo#desktop"
+		]
+	},
+
+	"logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://realplaza.vtexassets.com/arquivos/logo-nuevo-real-plaza.png"
+    }
+  },
+
+	"flex-layout.col#buscador-input": {
+		"props": {
+			"verticalAlign": "middle",
+			"width": "40%"
+    },
+		"children": [
+			"search-bar"
+		]
+	},
+
+	"flex-layout.col#micuenta": {
+		"props": {
+			"verticalAlign": "middle",
+			"width": "15%"
+    },
+		"children": [
+
+		]
+	},
+
+	"flex-layout.col#cart": {
+		"props": {
+			"verticalAlign": "middle",
+			"width": "15%"
+		},
+		"children": [
+			"minicart.v2"
+		]
+	},
+
+	"flex-layout.row#4-desktop": {
+		"props": {
+      "verticalAlign": "middle"
+    },
+		"children":[
+			"flex-layout.col#categorias",
+			"flex-layout.col#marcas",
+			"flex-layout.col#vende-aqui",
+			"flex-layout.col#tecnologia",
+			"flex-layout.col#electrohogar",
+			"flex-layout.col#decohogar",
+			"flex-layout.col#menos",
+			"flex-layout.col#verano"
+		]
+	},
+
+	"flex-layout.col#categorias": {
+		"children": [
+			"rich-text#categorias"
+		]
+	},
+
+	"rich-text#categorias": {
+		"props":{
+			"text": "Categorías"
+		}
+	},
+
+	"flex-layout.col#marcas": {
+		"children": [
+			"rich-text#marcas"
+		]
+	},
+
+	"rich-text#marcas": {
+		"props":{
+			"text": "Marcas Destacadas"
+		}
+	},
+
+	"flex-layout.col#vende-aqui": {
+		"children": [
+			"rich-text#vende-aqui"
+		]
+	},
+
+	"rich-text#vende-aqui": {
+		"props":{
+			"text": "Vende aquí"
+		}
+	},
+
+	"flex-layout.col#tecnologia":{
+		"children": [
+			"rich-text#tecnología"
+		]
+	},
+
+	"rich-text#tecnología": {
+		"props":{
+			"text": "Tecnología"
+		}
+	},
+
+	"flex-layout.col#electrohogar":{
+		"children": [
+			"rich-text#electrohogar"
+		]
+	},
+
+	"rich-text#electrohogar": {
+		"props":{
+			"text": "Electrohogar"
+		}
+	},
+
+	"flex-layout.col#decohogar":{
+		"children": [
+			"rich-text#decohogar"
+		]
+	},
+
+	"rich-text#decohogar": {
+		"props":{
+			"text": "Decohogar"
+		}
+	},
+
+	"flex-layout.col#menos":{
+		"children": [
+			"rich-text#menos"
+		]
+	},
+
+	"rich-text#menos": {
+		"props":{
+			"text": "Menos de $/99"
+		}
+	},
+
+	"flex-layout.col#verano": {
+		"children": [
+			"rich-text#verano"
+		]	
+	},
+
+	"rich-text#verano": {
+		"props":{
+			"text": "Verano"
+		}
+	}
 }
