@@ -32,6 +32,9 @@
 	},
 	
 	"flex-layout.row#2-desktop": {
+		"props": {
+      "blockClass": "promocion-organicos"
+    },
 		"children":[
 			"image#top-promociones"
 		]
@@ -40,11 +43,15 @@
 	"image#top-promociones": {
     "props": {
       "src": "https://raw.githubusercontent.com/Paxci/Training-theme/master/store/blocks/header/imgs/header-promotions.jpg?token=AQNF6QF34S4L6WP7VIVEM63ADBQLC",
-      "link": "/"
+			"link": "/",
+			"maxWidth": "100%"
     }
   },
 
 	"flex-layout.row#3-desktop": {
+		"props": {
+      "blockClass": "menu-sticky-logo-searcher"
+    },
 		"children":[
 			"flex-layout.col#logo-desktop",
 			"flex-layout.col#buscador-input",
@@ -56,7 +63,8 @@
 	"flex-layout.col#logo-desktop": {
 		"props": {
 			"verticalAlign": "middle",
-			"width": "20%"
+			"width": "20%",
+			"blockClass": "logo-realPlaza"
     },
 		"children": [
 			"logo#desktop"
@@ -67,25 +75,36 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://realplaza.vtexassets.com/arquivos/logo-nuevo-real-plaza.png"
+			"url": "https://realplaza.vtexassets.com/arquivos/logo-nuevo-real-plaza.png",
+			"width": "92%"
     }
   },
 
 	"flex-layout.col#buscador-input": {
 		"props": {
 			"verticalAlign": "middle",
-			"width": "40%"
+			"width": "50%",
+			"blockClass": "search",
+			"placeHolder": "¿Qué estás buscando?"
     },
 		"children": [
 			"search-bar"
 		]
 	},
 
+	"search-bar": {
+		"props": {
+			"placeholder": "¿Qué estás buscando?"
+		}
+	},
+
 	"flex-layout.col#micuenta": {
 		"props": {
 			"verticalAlign": "middle",
 			"horizontalAlign": "right",
-			"width": "15%"
+			"width": "7%",
+			"blockClass": "myAccount"
+
     },
 		"children": [
 			"rich-text#micuenta"
@@ -101,7 +120,8 @@
 	"flex-layout.col#cart": {
 		"props": {
 			"verticalAlign": "middle",
-			"width": "15%"
+			"width": "7%",
+			"blockClass": "buyCart"
 		},
 		"children": [
 			"minicart.v2"
@@ -111,7 +131,8 @@
 	"flex-layout.row#4-desktop": {
 		"props": {
 			"verticalAlign": "middle",			
-			"horizontalAlign": "center"
+			"horizontalAlign": "center",
+			"blockClass": "menu-categorias"
     },
 		"children":[
 			"flex-layout.col#categorias",
@@ -126,6 +147,9 @@
 	},
 
 	"flex-layout.col#categorias": {
+		"props": {
+			"blockClass": "categorias"
+		  },
 		"children": [
 			"rich-text#categorias"
 		]
@@ -138,6 +162,9 @@
 	},
 
 	"flex-layout.col#marcas": {
+		"props": {
+			"blockClass": "marcas"
+		  },
 		"children": [
 			"rich-text#marcas"
 		]
@@ -150,6 +177,9 @@
 	},
 
 	"flex-layout.col#vende-aqui": {
+		"props": {
+			"blockClass": "vende-aqui"
+		  },
 		"children": [
 			"rich-text#vende-aqui"
 		]
@@ -162,6 +192,9 @@
 	},
 
 	"flex-layout.col#tecnologia":{
+		"props": {
+			"blockClass": "tecnologia"
+		  },
 		"children": [
 			"rich-text#tecnología"
 		]
@@ -174,6 +207,9 @@
 	},
 
 	"flex-layout.col#electrohogar":{
+		"props": {
+			"blockClass": "electrohogar"
+		  },
 		"children": [
 			"rich-text#electrohogar"
 		]
@@ -186,6 +222,9 @@
 	},
 
 	"flex-layout.col#decohogar":{
+		"props": {
+			"blockClass": "decohogar"
+		  },
 		"children": [
 			"rich-text#decohogar"
 		]
@@ -198,6 +237,9 @@
 	},
 
 	"flex-layout.col#menos":{
+		"props": {
+			"blockClass": "menos"
+		  },
 		"children": [
 			"rich-text#menos"
 		]
@@ -210,6 +252,9 @@
 	},
 
 	"flex-layout.col#verano": {
+		"props": {
+			"blockClass": "verano"
+		  },
 		"children": [
 			"rich-text#verano"
 		]	

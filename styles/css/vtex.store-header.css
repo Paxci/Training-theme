@@ -1,84 +1,91 @@
-/* add transitions */
-:global(.vtex-sticky-layout-0-x-container)
-  :global(.vtex-store-components-3-x-logoLink),
-:global(.vtex-sticky-layout-0-x-container)
-  :global(.vtex-minicart-2-x-openIconContainer),
-:global(.vtex-sticky-layout-0-x-container)
-  :global(.vtex-store-components-3-x-searchBarContainer) {
-  transition: all 0.3s ease;
-  display: block;
+:global(.vtex-store-components-3-x-container){
+  padding-left: 0;
+  padding-right: 0;
 }
 
-/* desktop/mobile main header padding and background transitions */
-:global(.vtex-flex-layout-0-x-flexRowContent--main-header),
-:global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
-  transition: background 0.3s ease;
-  will-change: padding, background;
+/* Imagen de promocion en productos organicos*/
+:global(.vtex-flex-layout-0-x-flexRowContent--promocion-organicos){
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+  height: 45.78px;
 }
 
-/* main header desktop has a bigger padding when not stuck */
-:global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+/*logo de Real plaza*/
+:global(.vtex-flex-layout-0-x-flexRowContent--menu-sticky-logo-searcher){
+  background: #7300e0;
+  padding: 0;
+  margin: 0;
+  height: 74px;
+  display: flex;
+  justify-content: space-between;
 }
 
-/* add a box-shadow to desktop/mobile header when stuck */
-:global(.vtex-sticky-layout-0-x-wrapper--stuck)
-  :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
-:global(.vtex-sticky-layout-0-x-wrapper--stuck)
-  :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
-  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+/*buscador*/
+:global(.vtex-store-components-3-x-searchBarContainer){
+  width: 95.43%;
+  padding: 0px 15px;
+  margin-left: 35px;
 }
 
-/*
- * remove the extra padding when stuck from the desktop header
- * we add a transition only when "stuck" for the "unstick" step seem faster
- */
-:global(.vtex-sticky-layout-0-x-wrapper--stuck)
-  :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
-  transition: padding 0.3s ease, background 0.3s ease;
-  padding-top: 0;
-  padding-bottom: 0;
+:global(.vtex-flex-layout-0-x-flexCol--search) :global(.vtex-input-prefix__group){
+  border: none;
 }
 
-/* if supported add some translucency to the desktop/mobile header background */
-@supports (backdrop-filter: blur(5px)) {
-  :global(.vtex-sticky-layout-0-x-wrapper--stuck)
-    :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
-  :global(.vtex-sticky-layout-0-x-wrapper--stuck)
-    :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
-    backdrop-filter: blur(8px);
-  }
-
-  /* header background when stuck and not hovered */
-  :global(.vtex-sticky-layout-0-x-wrapper--stuck):not(:hover)
-    :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
-  :global(.vtex-sticky-layout-0-x-wrapper--stuck):not(:hover)
-    :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
-    background: rgba(240, 240, 240, 0.8);
-  }
+:global(.vtex-flex-layout-0-x-flexCol--search) :global(.vtex-styleguide-9-x-input)::placeholder{
+  color: #7300e0;
+  font-size: 14px;
 }
 
-/* stick wrapper with the same color as the desktop/mobile header */
-:global(.vtex-sticky-layout-0-x-wrapper--sticky-header) {
-  background-color: #f0f0f0;
+:global(.vtex-store-components-3-x-searchIcon){
+  color: #7300e0
 }
 
-/* resize the logo for neat effect */
-:global(.vtex-sticky-layout-0-x-wrapper--stuck)
-  :global(.vtex-store-components-3-x-logoLink) {
-  transform: scale(0.85);
+/*mi cuenta*/
+:global(.vtex-flex-layout-0-x-flexCol--myAccount){
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  :global(.vtex-sticky-layout-0-x-container)
-    :global(.vtex-store-components-3-x-logoLink),
-  :global(.vtex-sticky-layout-0-x-container)
-    :global(.vtex-minicart-2-x-openIconContainer),
-  :global(.vtex-sticky-layout-0-x-container)
-    :global(.vtex-store-components-3-x-searchBarContainer),
-  :global(.vtex-sticky-layout-0-x-wrapper--stuck)
-    :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
-    transition: none;
-  }
+:global(.vtex-flex-layout-0-x-flexCol--myAccount) :global(.vtex-rich-text-0-x-wrapper){
+  color: #fff;
+  padding: 0 10px 0 0;
+  border-right: 1px solid #fff;
+  font-size: 14px;
+}
+
+/* carrito de compras*/
+
+:global(.vtex-flex-layout-0-x-flexCol--buyCart) :global(.vtex-minicart-2-x-minicartIconContainer){
+  color: #fff;
+
+}
+
+
+/*Barra de categorias*/
+:global(.vtex-flex-layout-0-x-flexRowContent--menu-categorias){
+  background: #6800c9;
+  height: 49px;
+}
+
+:global(.vtex-rich-text-0-x-paragraph){
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  padding-top: 3px;
+  letter-spacing: 0.7px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+:global(.vtex-rich-text-0-x-paragraph):hover{
+  border-bottom: 3px solid #fff;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--marcas) :global(.vtex-rich-text-0-x-paragraph){
+  color: #ffc841;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--marcas) :global(.vtex-rich-text-0-x-paragraph):hover{
+  border-bottom: 3px solid #ffc841;
 }
