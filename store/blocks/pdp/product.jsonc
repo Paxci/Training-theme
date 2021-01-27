@@ -3,12 +3,7 @@
     "children": [
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-main",
-      "flex-layout.row#description",
-      "flex-layout.row#specifications-title",
-      "product-specification-group#table",
-      "shelf.relatedProducts",
-      "product-reviews",
-      "product-questions-and-answers"
+      "shelf.relatedProducts"
     ]
   },
   "flex-layout.row#specifications-title": {
@@ -69,7 +64,8 @@
     "children": ["stack-layout"],
     "props": {
       "width": "60%",
-      "rowGap": 0
+      "rowGap": 0,
+      "blockClass": "product-image-block"
     }
   },
   "flex-layout.row#product-image": {
@@ -90,27 +86,26 @@
       "rowGap": 0
     },
     "children": [
+      "product-identifier.product",
       "flex-layout.row#product-name",
       "product-rating-summary",
       "flex-layout.row#list-price-savings",
       "flex-layout.row#selling-price",
-      "product-installments",
       "product-separator",
-      "product-identifier.product",
       "sku-selector",
       "product-quantity",
       "product-assembly-options",
       "product-gifts",
       "flex-layout.row#buy-button",
-      "availability-subscriber",
-      "shipping-simulator",
-      "share#default"
+      "flex-layout.row#share-and-cards"
+      
     ]
   },
 
   "flex-layout.row#product-name": {
     "props": {
-      "marginBottom": 3
+      "marginBottom": 3,
+      "blockClass": "product-name"
     },
     "children": ["vtex.store-components:product-name"]
   },
@@ -125,18 +120,50 @@
   "flex-layout.row#buy-button": {
     "props": {
       "marginTop": 4,
-      "marginBottom": 7
+      "marginBottom": 7,
+      "blockClass": "buy-button"
     },
     "children": ["add-to-cart-button"]
+  },
+
+  "flex-layout.row#share-and-cards":{
+    "props": {
+			"blockClass": "share-and-credit-cards"
+    },
+    "children":[
+      "flex-layout.col#share",
+      "flex-layout.col#credit-cards"
+    ]
+  },
+
+  "flex-layout.col#share": {
+    "children":[
+      "share#default"
+    ]
+  },
+
+  "flex-layout.col#credit-cards":{
+    "children":[
+      "image#credit-cards"
+    ]
+  },
+
+  "image#credit-cards": {
+    "props": {
+      "src": "https://i.imgur.com/PbwV4H9.jpeg",
+			"link": "/",
+			"maxWidth": "100%",
+			"blockClass": "credit-cards"
+    }
   },
 
   "share#default": {
     "props": {
       "social": {
         "Facebook": true,
+        "Twitter": true,
         "WhatsApp": true,
-        "Twitter": false,
-        "Pinterest": true
+        "Pinterest": false
       }
     }
   }

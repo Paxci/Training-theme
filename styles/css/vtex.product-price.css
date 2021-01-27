@@ -77,3 +77,58 @@
   color: #FFFFFF;
   padding: 0.25rem 0.5rem 0.25rem 0.5rem;
 }
+
+/*breadcrumb*/
+:global(.vtex-breadcrumb-1-x-term){
+  font-size: 13px;
+}
+
+:global(.vtex-breadcrumb-1-x-arrow){
+  font-size: 13px;
+}
+
+/*product images*/
+
+:global(.vtex-store-components-3-x-caretIcon){
+  color: #7300e0;
+}
+
+:global(.vtex-store-components-3-x-swiperBullet--active){
+  color: #7300e0;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--product-image-block){
+  border-right: 1px solid #e4e4e4;
+}
+
+/*Titulo del producto*/
+
+:global(.vtex-flex-layout-0-x-flexRow--product-name) :global(.vtex-store-components-3-x-productBrand--quickview){
+  font-size: 22px;
+  color: #242424;
+  letter-spacing: .3px;
+  font-weight: 900;
+}
+
+/*buy button*/
+
+:global(.vtex-flex-layout-0-x-flexRow--buy-button){
+  width:60%;
+
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--buy-button) :global(.vtex-button){
+  background: #7300e0;
+  border-radius: 5px;
+  border-color: #7300e0;
+}
+
+/*bloque de compartir y tarjetas de credito*/
+
+:global(.vtex-flex-layout-0-x-flexRow--share-and-credit-cards) :global(.vtex-flex-layout-0-x-flexRowContent){
+  border-top: 1px solid #eee;
+}
+
+:global(.vtex-store-components-3-x-imageElement--credit-cards){
+  margin-top: 23px;
+}

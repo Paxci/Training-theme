@@ -35,7 +35,8 @@
 	"flex-layout.row#2-desktop": {
 		"props": {
 			"fullWidth": true,
-      "blockClass": "promocion-organicos"
+			"blockClass": "promocion-organicos",
+			"maxWidth":"100%"
     },
 		"children":[
 			"image#top-promociones"
@@ -46,13 +47,14 @@
     "props": {
       "src": "https://raw.githubusercontent.com/Paxci/Training-theme/master/store/blocks/header/imgs/header-promotions.jpg?token=AQNF6QF34S4L6WP7VIVEM63ADBQLC",
 			"link": "/",
-			"maxWidth": "100%"
+			"maxWidth": "100%",
+			"blockClass": "promocion-organicos"
     }
   },
 
 	"flex-layout.row#3-desktop": {
 		"props": {
-      "blockClass": "menu-sticky-logo-searcher"
+			"blockClass": "menu-sticky-logo-searcher"
     },
 		"children":[
 			"flex-layout.col#logo-desktop",
