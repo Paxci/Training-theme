@@ -9,3 +9,12 @@
 .row--payment-methods {
   padding-top: 16px;
 }
+
+/*contenedor del footer*/
+:global(.vtex-store-footer-2-x-footerLayout){
+  background: #7300e0;
+}
+
+:global(.vtex-store-footer-2-x-socialNetworkLink){
+  color: white;
+}

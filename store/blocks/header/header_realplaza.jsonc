@@ -23,6 +23,7 @@
 	"sticky-layout#4-desktop": {
     "props": {
 			"fullWidth": true,
+			"width":"100%",
       "blockClass": "sticky-header"
     },
 		"children": [
@@ -48,13 +49,15 @@
       "src": "https://raw.githubusercontent.com/Paxci/Training-theme/master/store/blocks/header/imgs/header-promotions.jpg?token=AQNF6QF34S4L6WP7VIVEM63ADBQLC",
 			"link": "/",
 			"maxWidth": "100%",
-			"blockClass": "promocion-organicos"
+			"blockClass": "promocion-organicos",
+			"width":"100%"
     }
   },
 
 	"flex-layout.row#3-desktop": {
 		"props": {
-			"blockClass": "menu-sticky-logo-searcher"
+			"blockClass": "menu-sticky-logo-searcher",
+			"width":"100%"
     },
 		"children":[
 			"flex-layout.col#logo-desktop",
@@ -136,7 +139,8 @@
 		"props": {
 			"verticalAlign": "middle",			
 			"horizontalAlign": "center",
-			"blockClass": "menu-categorias"
+			"blockClass": "menu-categorias",
+			"width":"100%"
     },
 		"children":[
 			"flex-layout.col#categorias",
