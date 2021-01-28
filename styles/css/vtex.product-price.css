@@ -109,6 +109,12 @@
   letter-spacing: .3px;
   font-weight: 900;
 }
+/*imagenes de producto*/
+:global(.vtex-store-components-3-x-productImagesThumbActive){
+  border: 2px solid #7300e0;
+}
+
+
 
 /*buy button*/
 
