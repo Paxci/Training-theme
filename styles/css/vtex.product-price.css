@@ -78,6 +78,16 @@
   padding: 0.25rem 0.5rem 0.25rem 0.5rem;
 }
 
+/*product container*/
+
+.flex-grow-1{
+  padding: 0 50px !important;
+}
+
+.product-container{
+  padding: 0 50px !important;
+}
+
 /*breadcrumb*/
 :global(.vtex-breadcrumb-1-x-term){
   font-size: 13px;
@@ -143,10 +153,26 @@
   letter-spacing: .3px;
 }
 
+/*reference*/
 
+:global(.vtex-flex-layout-0-x-flexRowContent--identifier-image-container){
+  margin-top: 20px;
+}
 
+:global(.vtex-flex-layout-0-x-flexCol--identifier-container){
+  padding-top: 20px;
+}
 
+/*oferta*/
+:global(.vtex-rich-text-0-x-container--offer-text){
+  justify-content: flex-start !important;
+}
 
+.offer-text{
+  color:#6d6d6d;
+  font-size: 13px;
+
+}
 
 /*buy button*/
 

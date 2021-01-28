@@ -1,5 +1,8 @@
 {
   "store.product": {
+    "props":{
+      "blockClass": "product-container"
+    },
     "children": [
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-main",
@@ -166,10 +169,10 @@
     "children": [
       "flex-layout.row#product-brand-seller",
       "flex-layout.row#product-name",
-      "product-identifier.product",
+      "flex-layout.row#identifier-image",
       "product-rating-summary",
+      "flex-layout.row#text-price",
       "flex-layout.row#list-price-savings",
-      "flex-layout.row#selling-price",
       "product-separator",
       "sku-selector",
       "product-quantity",
@@ -228,6 +231,112 @@
     "props": {
       "variationsSpacing": 3,
       "showValueNameForImageVariation": true
+    }
+  },
+
+  "flex-layout.row#identifier-image":{
+    "props":{
+      "blockClass": "identifier-image-container"
+    },
+    "children":[
+      "flex-layout.col#reference",
+      "flex-layout.col#image-send"
+    ]
+  },
+
+  "flex-layout.col#reference":{
+    "props":{
+      "blockClass": "identifier-container"
+    },
+    "children":[
+      "product-identifier.product"
+    ]     
+  },
+
+  "product-identifier.product":{
+    "props":{
+      "blockClass": "identifier"
+    }
+  },
+
+  "flex-layout.col#image-send":{
+    "children":[
+      "image#send-offer"
+    ]
+  },
+
+  "image#send-offer": {
+    "props": {
+      "src": "https://raw.githubusercontent.com/Paxci/Training-theme/master/store/blocks/pdp/imgs/Captura%20de%20pantalla%202021-01-28%20150951.jpg?token=AQNF6QELRKZ4R5R2KRXNZHLADRKZK",
+      "blockClass":"send-offer"
+    }
+  },
+
+  "flex-layout.row#text-price":{
+    "props":{
+      "blockClass":"text-price-container",
+      "marginTop": 20
+    },
+    "children":[
+      "flex-layout.col#offer-text",
+      "flex-layout.col#price-text"
+    ]
+  },
+  "flex-layout.col#offer-text":{
+    "props":{
+      "blockClass":"offer-text-container",
+      "width": "20%"
+    },
+    "children":[
+      "rich-text#offer-text"
+    ]
+  },
+
+  "rich-text#offer-text": {
+    "props": {
+      "text": "Oferta",
+      "blockClass": "offer-text"
+    }
+  },
+
+  "flex-layout.col#price-text":{
+    "children":[
+      "flex-layout.row#price-text"
+      
+    ]
+  },
+
+  "flex-layout.row#price-text":{
+    "children":[
+      "flex-layout.col#price",
+      "flex-layout.col#price-image"
+    ]
+  },
+
+  "flex-layout.col#price":{
+    "props":{
+      "width": "39%",
+      "blockClass": "price"
+    },
+    "children":[
+      "flex-layout.row#selling-price"
+    ]
+  },
+
+  "flex-layout.col#price-image":{
+    "props":{
+      "width":"50%",
+      "verticalAlign": "middle"
+    },
+    "children":[
+      "image#discount-image"
+    ]
+  },
+
+  "image#discount-image": {
+    "props": {
+      "src": "https://raw.githubusercontent.com/Paxci/Training-theme/master/store/blocks/pdp/imgs/Captura%20de%20pantalla%202021-01-28%20151030.jpg?token=AQNF6QFBPCWUGZJGFPR6IGLADRK2M",
+      "blockClass":"discount-offer"
     }
   },
 
