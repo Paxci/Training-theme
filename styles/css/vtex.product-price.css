@@ -101,18 +101,50 @@
   border-right: 1px solid #e4e4e4;
 }
 
-/*Titulo del producto*/
-
-:global(.vtex-flex-layout-0-x-flexRow--product-name) :global(.vtex-store-components-3-x-productBrand--quickview){
-  font-size: 22px;
-  color: #242424;
-  letter-spacing: .3px;
-  font-weight: 900;
-}
 /*imagenes de producto*/
 :global(.vtex-store-components-3-x-productImagesThumbActive){
   border: 2px solid #7300e0;
 }
+
+/*product brand*/
+
+:global(.vtex-store-components-3-x-productBrandContainer){
+  font-size: 16px;
+  color: #6d6d6d;
+  text-transform: uppercase;
+  margin-top: 0;
+  text-align: left;
+  text-decoration: underline;
+}
+
+/*vendedor*/
+
+:global(.vtex-flex-layout-0-x-flexRow--product-brand-seller-container){
+  margin-bottom: 10px;
+}
+
+:global(.vtex-product-price-1-x-sellerName--sellerName){
+  text-transform: capitalize;
+    margin-left: 5px;
+    font-size: 16px;
+    color: #5b5b5b;
+}
+
+/*Titulo del producto*/
+
+:global(.vtex-flex-layout-0-x-flexRow--product-name) :global(.vtex-store-components-3-x-productBrand--quickview){
+  margin-bottom: 20px;
+  font-family: Lato,sans-serif!important;
+  font-size: 18px;
+  font-weight: 900;
+  color: #242424;
+  text-transform: capitalize;
+  line-height: 1.3;
+  letter-spacing: .3px;
+}
+
+
+
 
 
 
