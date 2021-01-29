@@ -4,7 +4,9 @@
       "colGap": 2,
       "preserveLayoutOnMobile": true,
       "preventHorizontalStretch": true,
-      "marginBottom": 4
+      "marginBottom": 4,
+      "blockClass": "price-value"
+      
     },
     "children": [
       "product-selling-price"

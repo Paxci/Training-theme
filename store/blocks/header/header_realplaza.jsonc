@@ -57,13 +57,15 @@
 	"flex-layout.row#3-desktop": {
 		"props": {
 			"blockClass": "menu-sticky-logo-searcher",
-			"width":"100%"
+			"width":"100%",
+			"fullWidth": true
+
     },
 		"children":[
 			"flex-layout.col#logo-desktop",
 			"flex-layout.col#buscador-input",
-			"flex-layout.col#micuenta",
-			"flex-layout.col#cart"
+			"flex-layout.col#micuenta-minicart"
+			
 		]
 	},
 
@@ -105,11 +107,24 @@
 		}
 	},
 
+	"flex-layout.col#micuenta-minicart":{
+		"children":[
+			"flex-layout.row#micuenta-minicart"
+		]
+	},
+
+	"flex-layout.row#micuenta-minicart":{
+		"children":[
+			"flex-layout.col#micuenta",
+			"flex-layout.col#cart"
+		]
+	},
+
 	"flex-layout.col#micuenta": {
 		"props": {
 			"verticalAlign": "middle",
 			"horizontalAlign": "right",
-			"width": "7%",
+			"width": "80%",
 			"blockClass": "myAccount"
 
     },
@@ -126,8 +141,9 @@
 
 	"flex-layout.col#cart": {
 		"props": {
+			"horizontalAlign": "left",
 			"verticalAlign": "middle",
-			"width": "7%",
+			"width": "20%",
 			"blockClass": "buyCart"
 		},
 		"children": [
@@ -140,7 +156,8 @@
 			"verticalAlign": "middle",			
 			"horizontalAlign": "center",
 			"blockClass": "menu-categorias",
-			"width":"100%"
+			"width":"100%",
+			"fullWidth": true
     },
 		"children":[
 			"flex-layout.col#categorias",

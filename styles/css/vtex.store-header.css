@@ -1,7 +1,3 @@
-:global(.vtex-store-components-3-x-container){
-  padding-left: 0;
-  padding-right: 0;
-}
 
 /* Imagen de promocion en productos organicos*/
  :global(.vtex-flex-layout-0-x-flexRow--promocion-organicos) :global(.vtex-store-components-3-x-imageElement--promocion-organicos){
@@ -12,6 +8,12 @@
   width: 100%;
 }
 
+/*Header*/
+.sticky-header{
+  width: 100%;
+  max-width: 100%;
+}
+
 /*logo de Real plaza*/
 :global(.vtex-flex-layout-0-x-flexRowContent--menu-sticky-logo-searcher){
   background: #7300e0;
@@ -20,13 +22,14 @@
   height: 74px;
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 /*buscador*/
 :global(.vtex-store-components-3-x-searchBarContainer){
   width: 95.43%;
   padding: 0px 15px;
-  margin-left: 35px;
+  margin-left: 100px;
 }
 
 :global(.vtex-flex-layout-0-x-flexCol--search) :global(.vtex-input-prefix__group){
@@ -44,7 +47,7 @@
 
 /*mi cuenta*/
 :global(.vtex-flex-layout-0-x-flexCol--myAccount){
-  align-items: center;
+  align-items: flex-end;
 }
 
 :global(.vtex-flex-layout-0-x-flexCol--myAccount) :global(.vtex-rich-text-0-x-wrapper){
@@ -58,7 +61,10 @@
 
 :global(.vtex-flex-layout-0-x-flexCol--buyCart) :global(.vtex-minicart-2-x-minicartIconContainer){
   color: #fff;
+}
 
+:global(.vtex-flex-layout-0-x-flexCol--buyCart){
+  align-items: end;
 }
 
 
@@ -69,7 +75,7 @@
   width: 100%;
 }
 
-:global(.vtex-rich-text-0-x-paragraph){
+:global(.vtex-flex-layout-0-x-flexRow--menu-categorias) :global(.vtex-rich-text-0-x-paragraph){
   color: #fff;
   text-transform: uppercase;
   font-size: 13px;
@@ -86,7 +92,7 @@
   justify-content: center;
 }
 
-:global(.vtex-rich-text-0-x-paragraph):hover{
+:global(.vtex-flex-layout-0-x-flexRow--menu-categorias) :global(.vtex-rich-text-0-x-paragraph):hover{
   border-bottom: 3px solid #fff;
 }
 
