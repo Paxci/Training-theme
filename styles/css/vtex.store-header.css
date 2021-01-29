@@ -29,7 +29,7 @@
 :global(.vtex-store-components-3-x-searchBarContainer){
   width: 95.43%;
   padding: 0px 15px;
-  margin-left: 100px;
+  margin-left: 20%;
 }
 
 :global(.vtex-flex-layout-0-x-flexCol--search) :global(.vtex-input-prefix__group){

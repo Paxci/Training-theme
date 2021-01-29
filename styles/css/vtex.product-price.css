@@ -4,18 +4,17 @@
   font-size: 1rem;
 }
 
-.sellingPrice {
-  color: #3f3f40;
-  font-size: 1.25rem;
+.sellingPrice {  
+  margin-top: 5px;
 }
 
 .sellingPriceValue {
-  font-size: 2.25rem;
-  font-weight: 700;
+  font-size: 32px;
+  font-weight: 400;
 }
 
 .installments {
-  color: #727273;
+  color: rgb(85, 85, 85);
   margin-bottom: 1rem;
 }
 
@@ -131,6 +130,7 @@
 
 :global(.vtex-flex-layout-0-x-flexRow--product-brand-seller-container){
   margin-bottom: 10px;
+  margin-right: 80px;
 }
 
 :global(.vtex-product-price-1-x-sellerName--sellerName){
@@ -174,6 +174,14 @@
 
 }
 
+/*precio*/
+
+:global(.vtex-flex-layout-0-x-flexRowContent--price-value) :global(.vtex-product-price-1-x-sellingPrice){
+  color: #ff3e3e;
+  font-size: 32px;
+  font-weight: 400;
+}
+
 /*buy button*/
 
 :global(.vtex-flex-layout-0-x-flexRow--buy-button){
@@ -195,4 +203,50 @@
 
 :global(.vtex-store-components-3-x-imageElement--credit-cards){
   margin-top: 23px;
+}
+
+/*tab layout*/
+
+  /*categorias*/
+:global(.vtex-tab-layout-0-x-listContainer--tabs-descripcion-comments){
+  border-bottom: 1px solid #bcbcbd;
+}
+
+:global(.vtex-tab-layout-0-x-listContainer--tabs-descripcion-comments) :global(.vtex-tab-layout-0-x-listItemActive){
+  background: white;
+  border-bottom: 4px solid #7300e0;
+}
+
+:global(.vtex-tab-layout-0-x-listContainer--tabs-descripcion-comments) :global(.vtex-tab-layout-0-x-listItemActive) :global(.vtex-button__label){
+  background: white;
+  border: none;
+}
+
+:global(.vtex-tab-layout-0-x-listContainer--tabs-descripcion-comments) :global(.vtex-tab-layout-0-x-listItemActive) :global(.vtex-button){
+  background: white;
+  border: none;
+}
+
+:global(.vtex-tab-layout-0-x-listContainer--tabs-descripcion-comments) :global(.vtex-tab-layout-0-x-listItem){
+  margin: 0 3%;
+}
+
+:global(.vtex-tab-layout-0-x-listContainer--tabs-descripcion-comments) :global(.vtex-tab-layout-0-x-listItem) :global(.vtex-button) :global(.vtex-button__label){
+  font-family: Circular Pro Bold;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #7300e0;
+  text-transform:capitalize;
+}
+
+:global(.vtex-tab-layout-0-x-listContainer--tabs-descripcion-comments) :global(.vtex-tab-layout-0-x-listItem) :global(.vtex-button):hover{
+  background: white;
+}
+
+/*content*/ 
+
+:global(.vtex-tab-layout-0-x-contentContainer--tabs-descripcion-comments-content){
+  margin-top: 50px;
 }

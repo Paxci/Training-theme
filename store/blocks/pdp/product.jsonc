@@ -18,11 +18,14 @@
    ],   
    "props": {
      "blockClass": "home",
-     "defaultActiveTabId": "home1"
+     "defaultActiveTabId": "product1"
    }
  },
 
  "tab-list#product": {
+   "props":{
+     "blockClass": "tabs-descripcion-comments"
+   },
     "children": [
     "tab-list.item#product1",
     "tab-list.item#product2",
@@ -51,6 +54,9 @@
   },
 
   "tab-content#product": {
+    "props":{
+      "blockClass": "tabs-descripcion-comments-content"
+    },
       "children": [
         "tab-content.item#descripcion",
         "tab-content.item#especificaciones",
