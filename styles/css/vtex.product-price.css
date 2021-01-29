@@ -232,7 +232,6 @@
 }
 
 :global(.vtex-tab-layout-0-x-listContainer--tabs-descripcion-comments) :global(.vtex-tab-layout-0-x-listItem) :global(.vtex-button) :global(.vtex-button__label){
-  font-family: Circular Pro Bold;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
